@@ -1,1 +1,74 @@
-0x00. AirBnB clone - The console
+## AirBnB clone - The console
+This project aims to design the infrastructure of a command interpretor for an Airbnb clone.
+
+![This is an image](https://static.dezeen.com/uploads/2014/07/Airbnb-rebrand-by-DesignStudio_dezeen_468_8.jpg)
+
+## What’s a command interpreter?
+Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage and manipulate the objects of our console.
+
+The objects that we aim to manage and manipulate are:
+* Amenity
+* City
+* Place
+* Review
+* State
+* User
+
+## Requirements
+# Python Scripts
+* Allowed editors: vi, vim, emacs
+* All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+* All your files should end with a new line
+* The first line of all your files should be exactly #!/usr/bin/python3
+* A README.md file, at the root of the folder of the project, is mandatory
+* Your code should use the pycodestyle (version 2.8.*)
+* All your files must be executable
+* The length of your files will be tested using wc
+* All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+* All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+* All your functions (inside and outside a class) should have a documentation (python3 -c 
+'print(__import__("my_module").my_function.__doc__)' and python3 -c
+'print(__import__("my_module").MyClass.my_function.__doc__)')
+* A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+
+
+## Execution
+Your shell should work like this in interactive mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+But also in non-interactive mode:
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+
+## Author
+Kim Martin
